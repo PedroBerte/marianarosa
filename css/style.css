@@ -1,0 +1,205 @@
+@font-face{
+    font-family: qanelas;
+    src: url(../fonts/qanelas-demo-thin.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+}
+#full-screen{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 100%; /* alterado */
+    transition: display 3s;
+    position: relative
+}
+#inicio-logo{
+    opacity: 0%;
+    width: 900px;
+    transition: opacity 1.6s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#conteudo-geral{
+    opacity: 00%; /* alterado */
+    transition: opacity 0.8s;
+}
+#cabecalho{
+    width: 100%;
+    margin-top: 10px;
+    height: 80px;
+}
+#cabecalho img{                
+    height: 65px;
+    margin-left: 100px;
+}
+#cabecalho ul{
+    margin-top: 20px;
+    float: right;
+    height: 80px;
+    list-style: none;
+    height: 40px;
+    margin-right: 300px;
+    margin-bottom: 0px;
+}
+#cabecalho ul li{
+    display: inline;
+    padding-right: 90px;
+}
+#cabecalho ul li:last-child{
+    padding-right: 0px;
+}
+#cabecalho ul li a{
+    text-decoration: none;
+    color: #6e514b;
+    font-family: 'Montserrat', sans-serif;
+}
+#header-line{
+    height: 1px;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: #6e514b;
+    opacity: 85%;
+    margin-bottom: 0px;
+}
+.separador{
+    padding-right: 0px;
+}
+#foto-pro{
+    width: 550px;
+    padding-right: 30px;
+    float: left;
+}
+#session-apresentacao{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#p-sobremariana{
+    float: left;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 700px;
+}
+#session-apresentacao-text{
+    display: flex;
+    flex-direction: column;
+}
+.h1-title{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+    color: #6e514b;
+    text-align: center;
+}
+#session-portifolio{
+    width: 100%;
+    height: auto;
+    text-align: center
+}
+#div-portifolio{     /*todas as divs do portifolio estao aqui*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.img-div{
+    position: relative;
+    width: 500px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: transform 1s;
+}
+.img-div:hover{
+    transform: scale(1.1);
+}
+.img-div img{
+    display: block;
+    width: 100%;
+}
+.img-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+.img-text:hover{
+    opacity: 1;
+}
+#title-portifolio{
+    font-family: 'Montserrat', sans-serif;
+    color: #6e514b;
+}
+#intro-logo-img{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+#intro-background{
+    width: 100%;
+    border-radius: 10px;
+}
+#form-contato{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input-txt{
+    font-family: 'Montserrat', sans-serif;
+    color: #6e514b;
+    margin: 0;
+    margin-top: 28px;
+}
+.input-txt:first-of-type{
+    margin-top: 0;
+}
+.input-form{
+    width: 500px;
+}
+#text-area-form{
+    resize: none;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+#bt-form{
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+}
+#form-contato form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#bt-form{
+    font-family: 'Montserrat', sans-serif;
+    color: #bf6d5e;
+    border: none;
+}
