@@ -4,6 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
+
 *{
     padding: 0;
     margin: 0;
@@ -12,22 +13,24 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 100%; /* alterado */
-    transition: display 3s;
-    position: relative
+    opacity: 100%; /* changed for code*/
+    transition: display 1.8s;
+    position: relative;
+    /* display: none; */    /* only aplly when code */
 }
 #inicio-logo{
     opacity: 0%;
     width: 900px;
     transition: opacity 1.6s;
     position: absolute;
+    /* display: none; */     /* only aplly when code */
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 #conteudo-geral{
-    opacity: 00%; /* alterado */
+    opacity: 00%; /* changed for code*/
     transition: opacity 0.8s;
 }
 #cabecalho{
@@ -106,7 +109,7 @@
     height: auto;
     text-align: center
 }
-#div-portifolio{     /*todas as divs do portifolio estao aqui*/
+#div-portifolio{     /*all divs of 'portifolio' are here*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -150,13 +153,14 @@
     font-family: 'Montserrat', sans-serif;
     color: #6e514b;
 }
+#intro{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 #intro-logo-img{
     width: 600px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 #intro-background{
     width: 100%;
